@@ -1,0 +1,6 @@
+uvicorn
+sqlalchemy
+passlib
+bcrypt
+pyjwt
+python-multipart
