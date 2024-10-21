@@ -1,10 +1,10 @@
 from fastapi import APIRouter,Depends,status,HTTPException,Response
-from .. import models,schema,database
+from blog_creation import models,schema,database
 from typing import List
-from ..database import get_db
+from blog_creation.database import get_db
 from sqlalchemy.orm import session
-from ..repository import blog
-from ..oauth2 import get_current_user
+from blog_creation.repository import blog
+from blog_creation.oauth2 import get_current_user
 
 
 

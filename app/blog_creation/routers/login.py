@@ -1,9 +1,9 @@
 from fastapi import APIRouter,status,Depends,HTTPException
-from .. import models,schema
+from blog_creation import models,schema
 from sqlalchemy.orm import session
-from ..database import get_db
-from..hashing import Hash
-from..jwttoken import create_access_token
+from blog_creation.database import get_db
+from blog_creation.hashing import Hash
+from blog_creation.jwttoken import create_access_token
 from fastapi.security.oauth2 import OAuth2PasswordRequestForm
 
 router=APIRouter(tags=["login"])
